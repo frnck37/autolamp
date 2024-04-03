@@ -15,12 +15,18 @@ Few things to do:
 sudo nano autolamp.sh
 
 #Change the hostnames to your liking, lines 13 to 16.
+
 #Adjust virtual server settings, lines 20 to 57. Run the "ifconfig" command in the terminal to display the status of your interfaces and their IP addresses.
+
 #Change the SSID of your access point as desired, line 100.
-"Specify the IP of your wlan0 interface in the dnmasq configuration, line 110.
+
+#Specify the IP of your wlan0 interface in the dnmasq configuration, line 110.
+
 #Do the same in the captive portal configuration "GateWayAddress=192.168.X.X" line 130.
+
 #Run "sudo ./autolamp2.sh" in your terminal. The installation will begin.
-T#he secure installation of MySQL starts automatically at the end of the script. Answer the questions as follows:
+
+#The secure installation of MySQL starts automatically at the end of the script. Answer the questions as follows:
 
 # Change the root password? Yes, then "0"
 # Remove anonymous users? Yes
@@ -29,8 +35,12 @@ T#he secure installation of MySQL starts automatically at the end of the script.
 # Reload privilege tables now? Yes
 
 #MySQL is installed and configured, with no password for root. Connect to verify and perform any operations you want. (See MySQL documentation.)
+
 Run "sudo mysql -u root -p" to connect as root to the MySQL server, without a password.
-After rebooting, your Pi should start in access point mode, therefore not connected to the internet, in "Stand-Alone Access Point" mode. To stop the access point and reconnect the card to the internet, execute the following command:
+
+After rebooting, your Pi should start in access point mode, therefore not connected to the internet, in "Stand-Alone Access Point" mode.
+
+To stop the access point and reconnect the card to the internet, execute the following command:
 sudo systemctl disable hostapd
 
 #Please note that SSH connection works very well through the access point. You can directly paste your files and websites into the directory "www/yourbox.box/public_html" using, with your IP instead of the example, the command "sudo scp /home/yourpc/yoursite yourpi@192.168.1.19:/home/yourpi/var/www/yourbox.box/public_html".
