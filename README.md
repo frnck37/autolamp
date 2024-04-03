@@ -28,11 +28,15 @@ sudo nano autolamp.sh
 
 #The secure installation of MySQL starts automatically at the end of the script. Answer the questions as follows:
 
-Change the root password? Yes, then "0"
-Remove anonymous users? Yes
-Disallow root login remotely? Yes
-Remove test database and access it? Yes
-Reload privilege tables now? Yes
+"-Change the root password? Yes, then "0"
+
+-Remove anonymous users? Yes
+
+-Disallow root login remotely? Yes
+
+-Remove test database and access it? Yes
+
+-Reload privilege tables now? Yes"
 
 #MySQL is installed and configured, with no password for root. Connect to verify and perform any operations you want. (See MySQL documentation.)
 
