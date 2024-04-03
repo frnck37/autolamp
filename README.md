@@ -52,4 +52,6 @@ wget https://github.com/frnck37/autolamp/blob/main/autolamp.sh
 18. You can customize the captive portal splash page by editing: `/etc/nodogsplash/htdocs/splash.html` (add photos, logo, but no links, see documentation: [nodogsplash customization](https://nodogsplashdocs.readthedocs.io/en/stable/customize.html))
 
 19. phpMyAdmin should be accessible with your browser at the address `http://localhost/phpmyadmin`, or `http://localhost.phpmyadmin`.
+20. 
+I did this script, beacuse i believe in man, and mankind. Then, i believe in the man will, to confront metaphysics questions, using love. Wich goes further than only physics.So, the only power that ever existed on earth, is love. You belong to it.WE depend on it. Nobody can take the power on love.
 
