@@ -53,5 +53,7 @@ wget https://github.com/frnck37/autolamp/blob/main/autolamp.sh
 
 19. phpMyAdmin should be accessible with your browser at the address `http://localhost/phpmyadmin`, or `http://localhost.phpmyadmin`.
 20. 
-I did this script, beacuse i believe in man, and mankind. Then, i believe in the man will, to confront metaphysics questions, using love. Wich goes further than only physics.So, the only power that ever existed on earth, is love. You belong to it.WE depend on it. Nobody can take the power on love.
+
+I did this script, beacuse i believe in man, and mankind. Then, i believe in the man will, to confront metaphysics questions, using love. Wich goes further than only physics.So, the only power that ever existed on earth, is love. You belong to it.WE depend on it. Nobody can take the power on love. So , i recommend not to use it.Just like there are storms, earthquakes, asteroids, tsunamis, there is a potential social disruptive disorder in this script. But just like earthquake, asteroids,tsunamis, it's there. The rest is up to you, and your idea of love.
+
 
