@@ -10,7 +10,7 @@ wget https://github.com/frnck37/autolamp/blob/main/autolamp.sh
 
 ### Few things to do:
 
-1. **Configure your Raspberry Pi's internet connection via "bluetooth"**. The easiest way is to share your phone's connection. You won't be able to use the Wi-Fi interface (`wlan0`) once the installation is complete, and your Pi must be connected, even at a very low speed, for the captive portal to work.
+1. **Configure your Raspberry Pi's internet connection via "bluetooth"**. The easiest way is to share your phone's connection. You won't be able to use the Wi-Fi interface (`wlan0`) once the installation is complete, and your Pi must be connected, even at a very low speed, for the captive portal to work. Then, you must have SSH server enabled on your Rapsberrypi. Type sudo systemctl enable ssh in your Rapsberrypi console prior to anything.
 
 2. **Edit the `autolamp.sh` file**: `sudo nano autolamp.sh`.
 
@@ -41,9 +41,9 @@ wget https://github.com/frnck37/autolamp/blob/main/autolamp.sh
 
 13. To stop the access point and reconnect the card to the internet, execute the following command: `sudo systemctl disable hostapd`
 
-14. Please note that SSH connection works very well through the access point. You can directly paste your files and websites into the directory `www/yourbox.box/public_html` using, with your IP instead of the example, the command `sudo scp /home/yourpc/yoursite yourpi@192.168.1.19:/home/yourpi/var/www/yourbox.box/public_html`.
+14. Please note that SSH connection works very well through the access point. You can directly paste your files and websites into the directory `www/yourbox.box/public_html` using, with your IP instead of the example, the command `sudo scp /home/yourpc/yoursite yourpi@192.168.1.19:/home/yourpi/var/www/yourbox.box/public_html`. You must have SSH server enabled on your Rapsberrypi. Type sudo systemctl enable ssh in your Rapsberrypi console prior to anything.
 
-15. You can host whatever you want, it's your server, and your internet! For example, blogs or CMS like PluxMl, Wordpress (requires configuring a MySQL database, easily done with phpMyAdmin), all HTML/JS/CSS, PHP scripts of any kind, etc.
+15. You can host whatever you want, it's your server, and your internet! For example, blogs or CMS like PluxMl, Wordpress (requires configuring a MySQL database, easily done with phpMyAdmin), all HTML/JS/CSS, PHP scripts of any kind, etc. Simply put your files in your virtual hosts directories : /var/www/yourbox.box/public_html
 
 16. To execute Javascript on the backend, install node.js and npm. (see documentation: links)
 
