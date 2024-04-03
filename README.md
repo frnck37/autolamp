@@ -24,7 +24,7 @@ wget https://github.com/frnck37/autolamp/blob/main/autolamp.sh
 
 7. **Do the same** in the captive portal configuration `GateWayAddress=192.168.X.X`, line 130.
 
-8. Run `sudo ./autolamp2.sh` in your terminal. The installation will begin.
+8. Run `sudo ./autolamp.sh` in your terminal. The installation will begin.
 
 9. The secure installation of MySQL starts automatically at the end of the script. Answer the questions as follows:
    - Change the root password? Yes, then "0"
