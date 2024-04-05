@@ -9,8 +9,9 @@ A Bash script to automate the installation and configuration of an Open Access P
 wget https://github.com/frnck37/autolamp/blob/main/autolamp.sh
 
 ### Few things to do to install:
+Let's consider yu have access to your Ubuntu Mate console, either directly or using ssh.
 
-1. **Configure your Raspberry Pi's internet connection via "bluetooth"**. The easiest way is to share your phone's connection. You won't be able to use the Wi-Fi interface (`wlan0`) once the installation is complete, and your Pi must be connected, even at a very low speed, for the captive portal to work. Then, you must have SSH server enabled on your Rapsberrypi. Type 'sudo systemctl enable ssh' in your Rapsberrypi console prior to anything.
+1. **Configure your Raspberry Pi's internet connection via "bluetooth"**. The easiest way is to share your phone's connection. You won't be able to use the Wi-Fi interface (`wlan0`) once the installation is complete, and your Pi must be connected, even at a very low speed, for the captive portal to work. When configured, this connexion must be set on "priority:10". Then, you must have SSH server enabled on your Rapsberrypi. Type 'sudo systemctl enable ssh' in your Rapsberrypi console prior to anything.
 
 2. **Edit the `autolamp.sh` file**: `sudo nano autolamp.sh`.
 
@@ -22,7 +23,7 @@ wget https://github.com/frnck37/autolamp/blob/main/autolamp.sh
 
 6. **Specify the IP** of your `wlan0` interface in the `dnmasq` configuration, line 110.
 
-7. **Do the same** in the captive portal configuration `GateWayAddress=192.168.X.X`, line 130.
+7. **Do the same** in the captive portal configuration `GateWayAddress=192.168.X.X`, line 130. You can now close your file. (ctrl+o, puis ctrl+x)
 
 8. **Run** `sudo ./autolamp.sh` in your terminal. The installation will begin.
 
@@ -37,7 +38,7 @@ wget https://github.com/frnck37/autolamp/blob/main/autolamp.sh
 
 11. **Run** `sudo mysql -u root -p` to connect as root first log to the MySQL server, without a password.
 
-12. After rebooting, your Pi should start in access point mode, therefore not connected to the internet, in "Stand-Alone Access Point" mode.
+12. After rebooting, your Pi should start in access point mode, therefore not connected to the internet, in "Stand-Alone Access Point" mode.You can try to connect to it, using any device, and tou should see the Portal slash page.
 
 13. To stop the access point and reconnect the card to the internet, execute the following command: `sudo systemctl disable hostapd`
 
