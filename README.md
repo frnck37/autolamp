@@ -35,7 +35,7 @@ wget https://github.com/frnck37/autolamp/blob/main/autolamp.sh
 
 10. MySQL is installed and configured, with no password for root. Connect to verify and perform any operations you want. (See MySQL documentation.)
 
-11. **Run** `sudo mysql -u root -p` to connect as root to the MySQL server, without a password.
+11. **Run** `sudo mysql -u root -p` to connect as root first log to the MySQL server, without a password.
 
 12. After rebooting, your Pi should start in access point mode, therefore not connected to the internet, in "Stand-Alone Access Point" mode.
 
@@ -53,7 +53,21 @@ wget https://github.com/frnck37/autolamp/blob/main/autolamp.sh
 
 19. phpMyAdmin should be accessible with your browser at the address `http://localhost/phpmyadmin`, or `http://localhost.phpmyadmin`.
 20. 
+21. The script automatically perform the installation of the webmin interface on your web server. You can then administrate  your entire rapsberrypi system using the web interface at : https://localhost:10000, or https://<yourip>:10000
 
-I did this script, beacuse i believe in man, and mankind. Then, i believe in the man will, to confront metaphysics questions, using love. Wich goes further than only physics.So, the only power that ever existed on earth, is love. You belong to it.WE depend on it. Nobody can take the power on love. So , i recommend not to use it.Just like there are storms, earthquakes, asteroids, tsunamis, there is a potential social disruptive disorder in this script. But just like earthquake, asteroids,tsunamis, it's there. The rest is up to you, and your idea of love.
+You can now add these local url to your browser:
+
+https://localhost:10000      The webmin interface
+http://localhost/phpmyadmin   The phpmyadmin login, to administrate your databases
+http://yourbox.box/            Your first Host(example)
+http://local.box                 Your second Host(example)
+
+...and you have a well working portable web server, and everything to administrate it using simply the access point.
+Webmin offers edition capacities, but you can also ,from the Access Point, connect with the ssh protocol, and edit any system file as admin.
+
+Please note that it is not possible to use ssl/tls (to use "https://..." requests) running in Stand Alone Network, because the certificate needs a registered domain, from wich he confirms his validity. As you're not connected to the Internet(Port opening is not possible on iPhone and Androïd)  and have no publicly registered domain, you can't use SSL/TLS.
+Your sites will always be accessible using only "http://..." requests. Despite minor risks, it's a problem because you can not serve "webapp" for example.Any suggestions upon this particular point would be welcome ! But you can add security fixes to your server, depending  your use.(Search for "apache2 security" tutos.)
+
+Please note that there is a potential social disruptive disorder in this script. But just like earthquake, asteroids,tsunamis, it's there. The rest is up to you, and your idea of love.
 
 
