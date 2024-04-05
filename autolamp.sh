@@ -138,6 +138,13 @@ GatewayAddress 192.168.1.19
 EOF'
 
 
+#On installe le dépot pour webmin(interface web auto hébérgée de gestion de système. See: http://webmin.com)
+curl -o setup-repos.sh https://raw.githubusercontent.com/webmin/webmin/master/setup-repos.sh
+sh setup-repos.sh
+#On installe webmin
+apt-get install webmin --install-recommends
+
+#on lance les services : portail captif, puis config sécurisée mysql
 sudo cp ~/nodogsplash/debian/nodogsplash.service /lib/systemd/system/
 sudo systemctl enable nodogsplash.service 
 
