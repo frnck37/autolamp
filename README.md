@@ -51,16 +51,23 @@ wget https://github.com/frnck37/autolamp/blob/main/autolamp.sh
 
 18. You can customize the captive portal splash page by editing: `/etc/nodogsplash/htdocs/splash.html` (add photos, logo, but no links, see documentation: [nodogsplash customization](https://nodogsplashdocs.readthedocs.io/en/stable/customize.html))
 
-19. phpMyAdmin should be accessible with your browser at the address `http://localhost/phpmyadmin`, or `http://localhost.phpmyadmin`.
+19. phpMyAdmin should be accessible with your browser at the address `http://localhost/phpmyadmin`, or `http://localhost.phpmyadmin`. On first boot Username should be "root", and password is blank. Or try your Rapsberrypi username/sudo password.
 20. 
-21. The script automatically perform the installation of the webmin interface on your web server. You can then administrate  your entire rapsberrypi system using the web interface at : https://localhost:10000, or https://<yourip>:10000
+21. The script automatically perform the installation of the webmin interface on your web server. You can then administrate  your entire rapsberrypi system using the web interface at : https://localhost:10000, or https://yourip:10000. The password on first login should be "root" and "root", or your system login.(rapsberrypi username and sudo password)
 
-You can now add these local url to your browser:
+###You can now add these local url to your browser:
 
-https://localhost:10000      The webmin interface
-http://localhost/phpmyadmin   The phpmyadmin login, to administrate your databases
-http://yourbox.box/            Your first Host(example)
-http://local.box                 Your second Host(example)
+https://localhost:10000 
+The webmin interface
+
+http://localhost/phpmyadmin
+The phpmyadmin login, to administrate your databases
+
+http://yourbox.box/  
+Your first Host(example)
+
+http://local.box 
+Your second Host(example)
 
 ...and you have a well working portable web server, and everything to administrate it using simply the access point.
 Webmin offers edition capacities, but you can also ,from the Access Point, connect with the ssh protocol, and edit any system file as admin.
