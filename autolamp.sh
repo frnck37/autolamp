@@ -20,7 +20,7 @@ sudo chown -R franck/var/www/yoursite/
 sudo mkdir -p /var/www/secondsite/
 sudo chown -R franck/var/www/secondsite/
 
-sudo chmod -R 755 /var/www/
+sudo chmod -R 777 /var/www/
 
 # Configure Apache for virtual host yoursite
 sudo bash -c 'cat > /etc/apache2/sites-available/yoursite.conf << EOF
