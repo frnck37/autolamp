@@ -1,7 +1,3 @@
-#!/bin/bash
-
-# Update package lists
-sudo apt update
 
 #!/bin/bash
 
