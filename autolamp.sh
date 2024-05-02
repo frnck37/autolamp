@@ -101,7 +101,7 @@ sudo apt install hostapd dnsmasq -y
 sudo bash -c 'cat > /etc/hostapd/hostapd.conf << EOF
 interface=wlan0
 driver=nl80211
-ssid=cyclo
+ssid=yourssid
 hw_mode=g
 channel=6
 macaddr_acl=0
@@ -115,13 +115,6 @@ interface=wlan0
 dhcp-range=192.168.1.19,192.168.1.39,255.255.255.0,24h
 EOF'
 
-# Start services
-sudo systemctl unmask hostapd
-sudo systemctl enable hostapd
-sudo systemctl start hostapd
-
-sudo systemctl enable dnsmasq
-sudo systemctl start dnsmasq
 
 #Installation de NogSplash Portail Captif
 sudo apt-get install libmicrohttpd-dev
@@ -145,6 +138,15 @@ sh setup-repos.sh
 apt-get install webmin --install-recommends
 
 #on lance les services : portail captif, puis config sécurisée mysql
+
+# Start services
+sudo systemctl unmask hostapd
+sudo systemctl enable hostapd
+sudo systemctl start hostapd
+
+sudo systemctl enable dnsmasq
+sudo systemctl start dnsmasq
+
 sudo cp ~/nodogsplash/debian/nodogsplash.service /lib/systemd/system/
 sudo systemctl enable nodogsplash.service 
 
