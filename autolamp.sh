@@ -137,6 +137,9 @@ sh setup-repos.sh
 #On installe webmin
 apt-get install webmin --install-recommends
 
+#installation automatique sécurisée de Mysql
+sudo /usr/bin/mysql_secure_installation 
+
 #on lance les services : portail captif, puis config sécurisée mysql
 
 # Start services
@@ -149,14 +152,6 @@ sudo systemctl start dnsmasq
 
 sudo cp ~/nodogsplash/debian/nodogsplash.service /lib/systemd/system/
 sudo systemctl enable nodogsplash.service 
-
-
-
-#installation automatique sécurisée de Mysql
-sudo /usr/bin/mysql_secure_installation 
-   
-    
-
 
 # Finish
 echo "LAMP server OK."
