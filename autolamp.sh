@@ -140,6 +140,11 @@ apt-get install webmin --install-recommends
 #installation automatique sécurisée de Mysql
 sudo /usr/bin/mysql_secure_installation 
 
+#on désactive le network-manager. Attention, on perdra ensuite la connexion wifi ! Vérifiez que votre pi est connectée par bluetooth avant de lancer le script.
+systemctl stop NetworkManager.service
+echo "Network Manager stopped"
+systemctl disable NetworkManager.service
+echo "Network Manager disabled"
 #on lance les services : portail captif, puis config sécurisée mysql
 
 # Start services
