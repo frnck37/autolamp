@@ -116,6 +116,12 @@ dhcp-range=192.168.1.19,192.168.1.39,255.255.255.0,24h
 EOF'
 
 
+# Path to the hostapd configuration file
+HOSTAPD_CONF="/etc/hostapd/hostapd.conf"
+
+# Uncomment the DAEMON_CONF line and set its value to the hostapd configuration file path
+sudo sed -i 's/#\?DAEMON_CONF=.*/DAEMON_CONF="'"$HOSTAPD_CONF"'"/' /etc/default/hostapd
+    
 #Installation de NogSplash Portail Captif
 sudo apt-get install libmicrohttpd-dev
 
