@@ -2,7 +2,7 @@ markdown
 
 # Autolamp: 10 minutes Pi Box Server installation
 
-A Bash script to automate the installation and configuration of an Open Offline Access Point Apache web server on Raspberry Pi 4, currently running Ubuntu Mate 22.04 - Jammy, but should work on other Debian and Ubuntu distros.
+A Bash script to automate the installation and configuration of an Open Offline Access Point Apache web server on Raspberry Pi 4, currently running Ubuntu Mate 22.04 - Jammy, but should work on other Debian and Ubuntu distros. This is a test, any improvement is welcome !
 
 ## Get the autolamp script:
 
