@@ -68,7 +68,7 @@ sudo chmod a+rw -R /var/www/
 
 sudo /etc/init.d/apache2 restart
 
-sudo ln -s /usr/share/phpmydmin /var/www/html/phpmyadmin
+sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 
 sudo /etc/init.d/apache2 restart
 
