@@ -12,9 +12,9 @@ sudo apt install phpmyadmin
 sudo phpenmod mysqli
 
 sudo mkdir -p /var/www/yoursite/
-sudo chown -R franck/var/www/yoursite/
+sudo chown -R (user)/var/www/yoursite/
 sudo mkdir -p /var/www/secondsite/
-sudo chown -R franck/var/www/secondsite/
+sudo chown -R (user)/var/www/secondsite/
 
 sudo chmod -R 777 /var/www/
 
@@ -79,6 +79,15 @@ sudo a2enmod rewrite
 sudo apache2ctl configtest
 
 sudo apt-get install isc-dhcp-server -y
+
+sudo bash -c 'cat > /etc/apache2/sites-available/yoursite.conf << EOF
+"INTERFACESv4="wlan0"
+"INTERFACESv6=""
+EOF'
+
+sudo bash -c 'cat > /etc/apache2/sites-available/yourdsite.conf << EOF
+ net.ipv4.ip_forward=1
+EOF'
 
 sudo bash -c 'cat > /etc/apache2/sites-available/secondsite.conf << EOF
 "INTERFACESv4="wlan0"
