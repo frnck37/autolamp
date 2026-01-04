@@ -12,9 +12,9 @@ sudo apt install phpmyadmin
 sudo phpenmod mysqli
 
 sudo mkdir -p /var/www/yoursite/
-sudo chown -R (user)/var/www/yoursite/
+sudo chown -R (user) /var/www/yoursite/
 sudo mkdir -p /var/www/secondsite/
-sudo chown -R (user)/var/www/secondsite/
+sudo chown -R (user) /var/www/secondsite/
 
 sudo chmod -R 777 /var/www/
 
