@@ -85,7 +85,7 @@ sudo bash -c 'cat > /etc/apache2/sites-available/yoursite.conf << EOF
 "INTERFACESv6=""
 EOF'
 
-sudo bash -c 'cat > /etc/apache2/sites-available/yourdsite.conf << EOF
+sudo bash -c 'cat > /etc/apache2/sites-available/yoursite.conf << EOF
  net.ipv4.ip_forward=1
 EOF'
 
